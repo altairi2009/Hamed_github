@@ -1,0 +1,9 @@
+cd local_github
+ls
+git init
+git status
+git add --all
+git commit  -m "00000"
+git push --all -u
+git status
+git log
