@@ -1,0 +1,38 @@
+cd local_github
+ls
+git init
+git status
+git add --all
+git commit  -m "00000"
+git push --all -u
+git status
+git log
+
+#creating a branch
+cd local github
+git branch firstBranch
+git checkout firstBranch
+ls
+#back to master
+git checkout master
+
+#merging a branch to master
+#First checkout in the distination brach
+git merge fi rstBranch
+ls
+
+#modifying a file in a brach does not effect the same file in the other barch
+#you can check that by cat...
+git checkout firstBranch
+ls
+vim new.rtf
+git commit -a -m "modifying new"
+cat new.rtf
+git checkout master
+ls
+cat new.rtf
+
+
+
+
+
